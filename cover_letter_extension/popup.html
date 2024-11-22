@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cover Letter Maker</h1>
+        <form id="coverLetterForm">
+            <textarea id="resumeText" placeholder="Paste your resume text here" required></textarea>
+            <textarea id="jobDescription" placeholder="Paste the job description here" required></textarea>
+            <button type="submit">Generate Cover Letter</button>
+        </form>
+        <div id="result" style="display: none;">
+            <h2>Generated Cover Letter</h2>
+            <textarea id="coverLetter" rows="10" readonly></textarea>
+            <button id="copyButton">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
